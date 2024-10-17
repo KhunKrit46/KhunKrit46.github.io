@@ -6,112 +6,175 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Krit Kasikpan | Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     body {
-      background-color: #f8f9fa;
+      background-image: url('https://source.unsplash.com/1600x900/?technology,coding');
+      background-size: cover;
+      background-attachment: fixed;
+      color: #f8f9fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     .header {
-      background-color: #343a40;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 4rem 0;
+      text-align: center;
       color: white;
-      padding: 2rem 0;
+      animation: fadeIn 2s ease-in;
     }
     .header h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 2px;
     }
     .section-title {
-      font-size: 1.5rem;
-      margin-top: 1.5rem;
+      font-size: 2rem;
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+      text-shadow: 1px 1px 3px #000;
     }
     .card {
-      margin-bottom: 1.5rem;
+      background-color: rgba(255, 255, 255, 0.1);
+      border: none;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    .card h5 {
+      color: #f8f9fa;
+      text-shadow: 1px 1px 3px #000;
+    }
+    .card p {
+      color: #ddd;
     }
     .footer {
       padding: 2rem 0;
-      background-color: #343a40;
-      color: white;
+      background-color: rgba(0, 0, 0, 0.9);
       text-align: center;
+      color: white;
+      font-size: 1.2rem;
     }
     .social-links a {
-      margin: 0 10px;
+      margin: 0 15px;
       color: white;
+      font-size: 1.5rem;
+    }
+    .social-links a:hover {
+      color: #007bff;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
   </style>
 </head>
 <body>
 
   <!-- Header Section -->
-  <header class="header text-center">
+  <header class="header">
     <h1>👋 Hi, I'm Krit Kasikpan!</h1>
-    <p>I'm currently pursuing a Bachelor degree in Computer Science and Applied Statistics at the University of Toronto.</p>
-    <p>I'm dedicated to applying my technical skills to solve real-world problems, particularly in AI and data-driven applications.</p>
+    <p>Computer Science and Applied Statistics at the University of Toronto</p>
+    <p>Specializing in AI and data-driven applications</p>
   </header>
 
   <!-- About Me Section -->
   <section class="container mt-5">
-    <h2 class="section-title">About Me</h2>
-    <p>
-      As a student and aspiring software engineer, I have had the opportunity to develop a range of web applications and machine learning models. 
-      I’m passionate about integrating AI into financial applications and developing solutions that streamline complex processes. 
-      I’m currently working on several projects, including a financial AI assistant and a UML Mentor project through Google Developer Student Clubs.
+    <h2 class="section-title text-center">About Me</h2>
+    <p class="text-center">
+      I’m a passionate software engineer with a strong foundation in web applications and machine learning models. 
+      My focus is on AI and financial applications, streamlining processes, and finding solutions to complex problems.
     </p>
   </section>
 
   <!-- Technical Skills Section -->
   <section class="container mt-5">
-    <h2 class="section-title">Technical Skills 🔧</h2>
-    <ul class="list-group">
-      <li class="list-group-item"><strong>Languages:</strong> Python (PyTorch, NumPy, SciKit-Learn), Java, C/C++, JavaScript, PHP, R, HTML/CSS</li>
-      <li class="list-group-item"><strong>Frameworks:</strong> React, Node.js, Next.js, Flask, Apache Spark, JUnit, CodeIgniter, CronJob</li>
-      <li class="list-group-item"><strong>Databases:</strong> MongoDB, Oracle SQL, PostgreSQL, MySQL</li>
-      <li class="list-group-item"><strong>Tools:</strong> Git, GitLab, Docker, Heroku, Google Cloud Platform, VS Code, PyCharm, IntelliJ, UNIX</li>
-    </ul>
+    <h2 class="section-title text-center">Technical Skills 🔧</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <ul class="list-group">
+          <li class="list-group-item bg-transparent text-white"><strong>Languages:</strong> Python (PyTorch, NumPy, SciKit-Learn), Java, C/C++, JavaScript, PHP, R, HTML/CSS</li>
+          <li class="list-group-item bg-transparent text-white"><strong>Frameworks:</strong> React, Node.js, Next.js, Flask, Apache Spark, JUnit, CodeIgniter, CronJob</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-group">
+          <li class="list-group-item bg-transparent text-white"><strong>Databases:</strong> MongoDB, Oracle SQL, PostgreSQL, MySQL</li>
+          <li class="list-group-item bg-transparent text-white"><strong>Tools:</strong> Git, GitLab, Docker, Heroku, Google Cloud Platform, VS Code, PyCharm, IntelliJ, UNIX</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <!-- Key Projects Section -->
   <section class="container mt-5">
-    <h2 class="section-title">Key Projects 📚</h2>
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">UML Mentor Project</h5>
-        <p class="card-text">Used ReactFlow to allow users to interactively generate UML diagrams for Software Design students at UofT.</p>
+    <h2 class="section-title text-center">Key Projects 📚</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">UML Mentor Project</h5>
+            <p class="card-text">Used ReactFlow to help students interactively generate UML diagrams for software design.</p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Naive Bayesian Salary Prediction Model</h5>
-        <p class="card-text">Implemented the Variable Elimination algorithm in Python to predict salary, exploring fairness metrics like demographic parity.</p>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Naive Bayesian Salary Prediction Model</h5>
+            <p class="card-text">Implemented Python’s Variable Elimination algorithm to predict salary, exploring fairness metrics.</p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">BudgetGuru: AI-powered budgeting app</h5>
-        <p class="card-text">Built a neural network using PyTorch to classify expenses, and developed a Flask-based full-stack application for real-time financial analysis.</p>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">BudgetGuru: AI-powered budgeting app</h5>
+            <p class="card-text">Developed a neural network in PyTorch to classify expenses, built a Flask-based full-stack app.</p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Pokemon Battle Game</h5>
-        <p class="card-text">Developed a collaborative Java application using design patterns like Abstract Factory and Singleton, integrating Google Cloud APIs for accessibility.</p>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Pokemon Battle Game</h5>
+            <p class="card-text">Collaborative Java app, using Google Cloud APIs for text-to-speech features in-game.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Extracurricular Activities Section -->
   <section class="container mt-5">
-    <h2 class="section-title">Extracurricular Activities 🎉</h2>
-    <ul class="list-group">
-      <li class="list-group-item"><strong>Computer Science Program Facilitator:</strong> Mentoring first-year computer science students and organizing events to support their academic success at UofT.</li>
-      <li class="list-group-item"><strong>VP of Finance:</strong> Leading sponsorship and finance-related initiatives for university-wide events at the Mathematical and Computational Sciences Society, University of Toronto.</li>
-    </ul>
+    <h2 class="section-title text-center">Extracurricular Activities 🎉</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Computer Science Program Facilitator</h5>
+            <p class="card-text">Mentoring first-year computer science students and organizing events for their academic success.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">VP of Finance</h5>
+            <p class="card-text">Leading sponsorship and finance initiatives for university-wide events at the Mathematical and Computational Sciences Society.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Connect with Me Section -->
-  <section class="container mt-5">
+  <section class="container mt-5 text-center">
     <h2 class="section-title">Connect with Me 📬</h2>
-    <p class="text-center">
-      <a href="https://www.linkedin.com/in/krit-kasikpan" class="btn btn-primary">LinkedIn</a>
-      <a href="mailto:krit.kasikpan@mail.utoronto.ca" class="btn btn-secondary">Email</a>
-    </p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/krit-kasikpan" class="fab fa-linkedin"></a>
+      <a href="mailto:krit.kasikpan@mail.utoronto.ca" class="fas fa-envelope"></a>
+    </div>
   </section>
 
   <!-- Footer -->
