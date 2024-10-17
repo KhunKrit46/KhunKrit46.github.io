@@ -1,0 +1,53 @@
+body {
+  background-image: url('https://source.unsplash.com/1600x900/?technology,coding');
+  background-size: cover;
+  background-attachment: fixed;
+  color: #f8f9fa;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 4rem 0;
+  text-align: center;
+  color: white;
+}
+
+.header h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-top: 2rem;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.skills-list {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+.project-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.footer {
+  padding: 2rem 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.social-links .btn {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+}
