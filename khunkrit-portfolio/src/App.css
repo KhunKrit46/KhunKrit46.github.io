@@ -2,40 +2,37 @@ body {
   background-image: url('https://source.unsplash.com/1600x900/?technology,coding');
   background-size: cover;
   background-attachment: fixed;
-  color: #ffffff; /* Set white as the default text color */
+  color: #f8f9fa;
 }
 
 .header {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 4rem 0;
   text-align: center;
-  color: #ffffff; /* Ensure header text is white */
+  color: white;
 }
 
 .header h1 {
   font-size: 3.5rem;
   font-weight: 700;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adjust shadow for readability */
+  text-shadow: 2px 2px 5px #000;
 }
 
 .section-title {
   font-size: 2rem;
   margin-top: 2rem;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Adjust shadow for readability */
-  color: #ffffff; /* Ensure section titles are white */
+  text-shadow: 1px 1px 3px #000;
 }
 
 .skills-list {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 8px;
-  color: #000000; /* Set text color to black for contrast */
 }
 
 .project-card {
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
   transition: transform 0.3s;
-  color: #ffffff; /* Ensure project card text is white */
 }
 
 .project-card:hover {
@@ -53,5 +50,4 @@ body {
 .social-links .btn {
   font-size: 1.5rem;
   padding: 0.5rem 1rem;
-  color: #ffffff !important; /* Ensure button text is white */
 }
